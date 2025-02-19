@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: monospace, monospace; /* Monospace font for CLI look */
+    background-color: #222; /* Dark background */
+    color: #eee; /* Light text */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+#os-container {
+    display: flex;
+    flex-direction: column; /* Stack terminal and desktop vertically if needed */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
+
+#terminal {
+    flex-grow: 1; /* Terminal takes up available space */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Scroll if output is too long */
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+#terminal-output {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+#terminal-input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px;
+    color: #00ff00; /* Green prompt (classic) */
+}
+
+#terminal-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #eee;
+    font-family: monospace, monospace;
+    font-size: 1em;
+    outline: none; /* Remove input focus outline */
+}
+
+/* You can add more styling to make it prettier, like: */
+#terminal {
+    background: linear-gradient(to bottom, #333, #222); /* Gradient background */
+    border: 1px solid #444;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.terminal-line { /* Style for each line of output */
+    margin-bottom: 5px;
+}
+
+/* Example for a "file" output style */
+.file {
+    color: lightblue;
+}
+
+.directory {
+    color: yellow;
+}
+
+/* Add more styles for errors, warnings, etc. */
+.error {
+    color: red;
+}

@@ -45,7 +45,7 @@ const commands = {
         outputToTerminal(`  rm [file] - Remove a file`);
         outputToTerminal(`  cat [file] - Display file content`);
         outputToTerminal(`  calc [expression] - Simple calculator (use with caution!)`); // Added warning
-        outputToTerminal(`  notepad   - Open a simple notepad`);
+        outputToTerminal(`  notepad (NOT WORKING)   - Open a simple notepad`);
         outputToTerminal(`  sysfetch  - Display system information`); // Added sysfetch to help
         outputToTerminal(`  browser [query] | ddg [query] - Search DuckDuckGo in a new tab`); // Added browser to help
     },
@@ -214,12 +214,14 @@ const commands = {
         const uptime = getUptime();
 
         outputToTerminal(`<pre>
-        __  __      _       _
-       |  \\/  |    | |     | |
-       | \\  / | ___| |_ ___| |__
-       | |\\/| |/ _ \\ __/ _ \\ '_ \\
-       | |  | |  __/ ||  __/ |_) |
-       |_|  |_|\\___|\\__\\___|_.__/
+     /\_/\
+    ( o.o )  <---  "Taggy" the HTML OS Mascot!
+    > ^ <     /
+   /   _ \   /
+  |    / \  /
+   \  /   \
+    ||    *
+    \/
 
         <span style="color: lightblue;">OS Name:</span>    ${osName}
         <span style="color: lightblue;">Kernel:</span>     ${kernel}
